@@ -36,8 +36,8 @@ elif option == "From Google Sheet":
             st.error(f"Error loading URL: {e}")
 
 if DataTable is not None:
-    st.subheader("Preview Data")
-    st.dataframe(DataTable.info)
+    st.subheader("DataTable Preview")
+    st.dataframe(DataTable.head())
 
     query = st.text_input("Enter SQL query")
 
