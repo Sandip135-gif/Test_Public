@@ -37,7 +37,7 @@ elif option == "From Google Sheet":
 
 if DataTable is not None:
     st.subheader("Preview Data")
-    st.dataframe(DataTable.head())
+    st.write(DataTable.info())
 
     query = st.text_input("Enter SQL query")
 
